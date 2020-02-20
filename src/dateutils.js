@@ -35,7 +35,7 @@ function month(xd) {
   const days = new Date(year, month + 1, 0).getDate();
 
   const firstDay = new XDate(year, month, 1, 0, 0, 0, true);
-  const lastDay = new XDate(year, month, days, 0, 0, 0, true);
+  const lastDay = new XDate(year, month, 36, 0, 0, 0, true);
 
   return fromTo(firstDay, lastDay);
 }
